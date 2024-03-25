@@ -1,0 +1,60 @@
+#construye un programa que al recibir como dato el radio de un circulo, calcule e imprima tanto su area como la
+#longitud de su circunferencia 
+
+#El area de un circulo la calculamos como:
+#Area " pi * radio^2
+#la circuferencia del circulo la calculamos de la siguiente forma:
+# . longitud de la circunferencia " 2 *pi * radio
+
+
+
+import math
+
+radio=float(input("Ingrese el radio del circulo: "))
+
+area=math.pi*pow(radio,2)
+
+longitud=2*math.pi*radio
+
+print ("el area del circulo es: ", area)
+print (" la longitud del circulo es : ", longitud)
+
+-----------------------------------------------------------------------
+GananciasOctubre= int(input("Ingrese las ganancias de Octubre: "))
+GananciasNoviembre= int(input("Ingrese las ganancias de Noviembre: "))
+GananciasDiciembre= int(input("Ingrese las ganancias de Diciembre: "))
+
+GananciasTotales= GananciasOctubre + GananciasNoviembre +GananciasDiciembre
+print("Las ganancias fueron de: ",GananciasTotales)
+
+
+#condicionales 
+
+numero = int(input("Digite un numero: "))
+
+if numero>0:
+    print("El numero es positivo ")
+else:
+    print("El numero es negativo")
+   
+
+print("Fin del programa")  
+
+------ ciclo while ------------------
+#imprimir de 1 al 10 
+numero=1
+
+while numero <= 10:
+    print(numero)
+    numero += 1  
+print("Fin")
+
+#sumar multiplos de 5 
+
+contador = 0
+suma = 0 
+
+while contador < 50:
+    suma = suma + contador 
+    contador += 5
+    print("La suma es: ",suma)
